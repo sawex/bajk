@@ -215,5 +215,34 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="overlay"></div>
+	<div class="popup popup__visible">
+		<div class="popup__title-box">
+			<h3 class="popup__title">Написать письмо</h3>
+		</div>
+		
+		<form action="#" method="POST" class="popup__form">
+			<div class="popup__input-box">
+				<label for="question-ta" class="popup__form-label">Что вы хотите обсудить со мной?</label>
+				<textarea name="question" id="question-ta" class="popup__form-textarea"></textarea>
+			</div>
+			
+			<div class="popup__input-box">
+				<label for="i-email" class="popup__form-label">На какой email мне ответить?</label>
+				<input type="text" class="popup__form-input" name="email" id="i-email">
+				<input type="submit" value="Отправить" class="popup__submit-btn">
+				<span class="popup__email-error popup__email-error--visible">Напишите правильный email (c “@”)</span>
+			</div>
+		</form>
+		<button class="close-btn"></button>
+	</div>
+
+	<div class="success-popup popup__visible">
+		<div class="success-popup__desc-box">
+			<h2 class="success-popup__title">Письмо успешо отправлено!</h2>
+			<p class="success-popup__text">Спасибо! Я отвечу вам в течение двух дней.</p>
+		</div>
+	</div>
 </body>
 </html>

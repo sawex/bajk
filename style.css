@@ -736,3 +736,197 @@ body {
 .content a:hover {
   text-decoration: underline;
 }
+
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.8;
+  background-image: linear-gradient(to bottom, #1d66a9, #821241);
+  z-index: 999;
+}
+
+.popup {
+  width: 749px;
+  height: 493px;
+  background: linear-gradient(-135deg, transparent 70px, white 70px);
+  padding-top: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: none;
+}
+
+.popup__title-box {
+  display: inline-flex;
+  width: 761px;
+  height: 51px;
+  position: relative;
+  left: -50px;
+  align-items: center;
+  padding-left: 50px;
+  background: linear-gradient(-135deg, transparent 70px, #333 70px);
+  top: -24px;
+}
+
+.popup__title {
+  font-family: 'Rubik';
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.popup__input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  width: 100%;
+  position: relative;
+}
+
+.popup__input-box:last-child {
+  margin-bottom: 0;
+}
+
+.popup__form-label {
+  font-family: 'Rubik';
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.popup__form-textarea {
+  width: 649px;
+  height: 200px;
+  border-radius: 3px;
+  border: solid 1px #000000;
+  resize: none;
+  overflow: visible;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  line-height: 1.44;
+}
+
+.popup__form-input {
+  width: 379px;
+  height: 42px;
+  border-radius: 3px;
+  border: solid 1px #000000;
+  background-color: #ffffff;
+  font-family: 'Montserrat';
+  font-size: 18px;
+}
+
+.popup__submit-btn {
+  border: none;
+  color: #fff;
+  font-family: 'Rubik';
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 3px;
+  background-color: #bd1550;
+  padding: 10px 72px;
+  cursor: pointer;
+  position: absolute;
+  right: 39px;
+  top: 23px;
+}
+
+.popup__submit-btn:active {
+  background-color: #ae0641;
+}
+
+.popup__email-error {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.86;
+  color: #bd1550;
+  position: absolute;
+  bottom: -30px;
+  display: none;
+}
+
+.close-btn {
+  width: 29px;
+  height: 29px;
+  background-image: url(images/close-btn.svg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  position: absolute; 
+  top: 14px;
+  right: 3px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.success-popup {
+  width: 697px;
+  height: 129px;
+  background-color: rgba(19, 13, 58, 0.7);
+  z-index: 9999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.success-popup__desc-box {
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.success-popup__title {
+  font-family: 'Rubik';
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.success-popup__text {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+.popup__email-error--visible,
+.popup__visible {
+  display: block !important;
+}
