@@ -40,7 +40,6 @@ body {
   padding: 0;
   background-color: #fff;
   font-family: 'Montserrat', sans-serif;
-  font-size: ;
 }
 
 .header {
@@ -125,7 +124,7 @@ body {
 .banner {
   position: relative;
   overflow: hidden;
-  background-image: url(images/MSK.png);
+  /*background-image: url(images/MSK.png);*/
   -webkit-background-size: cover;
   background-size: cover;
   min-height: 944px;
@@ -424,11 +423,11 @@ body {
   left: 0;
 }
 
-.contacts__map img {
+/*.contacts__map img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+}*/
 
 .contacts__wrapper {
   z-index: 999;
@@ -673,7 +672,7 @@ body {
 
 
 /*privacy page*/
-.privacy__breadcramps {
+.privacy__breadcrumbs {
   width: 100%;
   min-height: 40px;
   background-color: #333333;
@@ -1327,4 +1326,42 @@ body {
   .contacts__button {
     padding: 10.5px 16px;
   }
+}
+
+/*After WP*/
+
+.services__tab-link {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.hidden {
+  display: none !important;
+}
+.block {
+  display: block !important;
+}
+.contacts__button {
+    border: none;
+    cursor: pointer;
+}
+.overlay {
+   cursor: pointer;
+}
+.contacts__title {
+    text-transform: uppercase;
+}
+.footer__menu {
+  padding: 0;
+  margin: 0;
+}
+.footer__menu-item {
+  list-style-type: none;
+}
+.footer__menu-link {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.6;
+  font-weight: 600;
 }
